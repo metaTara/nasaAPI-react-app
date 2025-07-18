@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Footer from "./components/Footer";
-import Main from "./components/main";
 import SideBar from "./components/SideBar";
+import Content from "./components/Content";
 
 
 function App() {
@@ -44,7 +44,7 @@ function App() {
   return (
     <>
     
-    <Main data={data}> </Main>
+    <Content data={data}> </Content>
     {showModal && (<SideBar data={data} toggleModal={toggleModal}> </SideBar>)}
     <Footer data={data} toggleModal={toggleModal} />
     </>
